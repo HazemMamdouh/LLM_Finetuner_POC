@@ -150,15 +150,6 @@
       "history": ""
     }
   },
-  "wikipedia_zh": {
-    "hf_hub_url": "pleisto/wikipedia-cn-20230720-filtered",
-    "columns": {
-      "prompt": "completion",
-      "query": "",
-      "response": "",
-      "history": ""
-    }
-  },
   "the_stack": {
     "hf_hub_url": "bigcode/the-stack",
     "columns": {
