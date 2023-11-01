@@ -31,6 +31,7 @@ Please refer to [data/README.md](data/README.md) for details.
 - Python 3.8+ and PyTorch 1.13.1+
 - Transformers, Datasets, Accelerate, PEFT and TRL
 - sentencepiece, protobuf and tiktoken
+- fastapi, psutil, uvicorn
 
 ## Getting Started
 
@@ -43,6 +44,18 @@ conda activate LLMFinetuner
 cd LLM_Finetuner_POC
 pip install -r requirements.txt
 ```
+### Run Server
+
+```bash
+uvicorn app.main:app --reload
+```
+
+> you can access the documnentation of api through `http://localhoost:8000/docs
+
+####OR
+
+you can use the colab notebook to test the server functionality 
+[llmfinetuner_Notebook](llmfinetuner_Notebook.ipynb)
 
 ### Train on a single GPU
 
@@ -91,4 +104,3 @@ CUDA_VISIBLE_DEVICES=0 python src/train_bash.py \
 
 
 This repository is licensed under the [Apache-2.0 License](LICENSE).
-
